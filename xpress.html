@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aminoacids supplement from Space Nutrition, training supplements for a healthy lifestyle">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e27b26897.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="webshop.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <title>BCAA - Xpress</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div id="logotype-box">
+                <a href="index.html"><img src="./static/logotype.svg" alt="tillbaks till start"></a>
+            </div>
+            <!--Toggle btn, hamburger-->
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a class="current" href="products.html">Produkter</a></li>
+                    <li><a href="basket.html">Varukorg<i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Main content, products and information goes here, using columns and flexbox for placement-->
+    <!--Picture tag used to optimize which img is uses for different screen sizes and best picture format displayed-->
+    <main>
+
+
+        <div class="flexbox-container">
+            <div class="flexbox-col wide">
+                <section>
+                    <h2 class="empty">x</h2>
+                    <a href="images/prod_xpresstilt_big.jpg" data-lightbox="spacenutrition" data-title="BCAA Express, cola & lime">
+                        <picture>
+                            <source class="product-img" type="image/webp" srcset="images/prod_xpresstilt500.webp">
+                            <img class="product-img" src="images/prod_xpresstilt_big.jpg" alt="Aminosyror med smak av cola & lime, en svart burk med lila etikett.">
+                        </picture>
+                    </a>
+                    <a href="images/enviroment_xpress_500.jpg" data-lightbox="spacenutrition" data-title="BCAA Express, cola & lime." class="remove-text-deco">
+                        <picture>
+                            <source class="product-img" type="image/webp" srcset="images/enviroment_xpress_300.webp">
+                            <img class="product-img min" src="images/enviroment_xpress_300.jpg" alt="Aminosyror med smak av cola & lime, Burken fotas tillsammans med en grön växt. ">
+                        </picture>
+                    </a>
+                    <a href="images/prod_xpress500.jpg" data-lightbox="spacenutrition" data-title="BCAA Express, cola & lime.">
+                        <picture>
+                            <source class="product-img" type="image/webp" srcset="images/prod_xpress300.webp">
+                            <img class="product-img min" src="images/prod_burn300.jpg" alt="Aminosyror med smak av cola & lime, burken är svart och har en lila etikett.">
+                        </picture>
+                    </a>
+
+                </section>
+            </div>
+
+            <div class="flexbox-col info">
+                <section>
+                    <h1 class="presentation-title-slim">aminosyror -<br> cola & lime</h1><br>
+                    <p class="prod-price large">399.95kr</p><br>
+                    <p><strong>BCAA Xpress</strong>, ett kosttillskott från <strong>Scitec Nutrition</strong> är ett välsmakande och hög-koncentrerat BCAA-tillskott med de grenade aminosyrorna <strong>L-leucin</strong>, <strong>L-isoleucin</strong> och <strong>L-valin</strong>i
+                        2:1:1 förhållande. Perfekt att använda före, under och efter träning.
+                    </p>
+
+                    <ul>
+                        <li class="product-info-list-item">Innehåller de 3 grenade aminosyrorna i fri form</li>
+                        <li class="product-info-list-item">15 000 mg BCAA vid full servering</li>
+                        <li class="product-info-list-item">Finns i flera goda smaker</li>
+                    </ul>
+                    <br>
+                    <button class="btn-black-styled" onclick="addToBasket(this, '004', 'Amino X', 399.95, 'images/basket_xpress.png', true)"><span>lägg i varukorgen</span><i class='fas fa-plus'></i></button><br>
+                    <h2 class="presentation-title">varukorg</h2>
+                    <div id="basket-holder">
+                        <ul id="basket">
+                            <li class="li-styled">Varukorgen är tom</li>
+                        </ul>
+                        <a class="btn-green-styled" href="basket.html"><span>Gå till kassan</span><i class='fas fa-angle-right'></i></a>
+                        <br>
+                        <p class="prod-cat">Artikelnr: <span class="stronger">004</span></p>
+                        <p class="prod-cat">Kategorier: Kosttillskott, Aminosyror </p>
+                        <br><br><a class="remove-text-deco" href="products.html"><span class="back">Tillbaka</span></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="flexbox-container">
+            <div class="flexbox-col wide">
+                <section class="prod-information-section">
+                    <h3 class="presentation-title">beskrivning</h3>
+                    <p>
+                        BCAA Xpress från Scitec Nutrition innehåller ingen extravagant utfyllnad utan är en renodlad BCAA-produkt. Detta medför att den blir oerhört koncentrerad då den ej späds ut med annat. En full servering BCAA Xpress ger massiva 15 000 mg BCAA fördelat på
+                        7 500 mg leucin och 3 750 mg vardera av isoleucin och valin. Detta göra BCAA Xpress till en av de tyngst doserade BCAA produkterna på marknaden.</p><br>
+                    <p>BCAA står för Branched Chain Amino Acids eller grenade aminosyror på svenska. Av samtliga 21 aminosyror så är BCAA unika då de har en förgrening som de andra aminosyrorna saknar. BCAA är essentiella vilket innebär att kroppen ej kan
+                        tillverka dessa själv utan de måste tillföras utifrån. I kroppen är BCAA involverat i ett stort antal proteiner, inte minst muskelvävnad.</p>
+                    <br>
+                    <p><strong>Antal doser per förpackning:</strong> 33 – 100 st. Rekommenderad daglig dos: Blanda 1 rågad tesked (7 g) med 1-3 dl vatten och drick 1-3 gånger per dag.</p>
+                </section>
+            </div>
+            <div class="flexbox-col wide">
+                <section class="prod-information-section">
+                    <h3 class="presentation-title">näring & ingredienser</h3>
+                    <div class="product-info-table-styled-container">
+                        <table>
+                            <tr>
+                                <th class="product-table head">Ingredienser</th>
+                                <th class="product-table head">Mängd per servering</th>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Calcium</td>
+                                <td class="product-table">15mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Magnesium</td>
+                                <td class="product-table">12mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Natrium</td>
+                                <td class="product-table">10mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Kalium</td>
+                                <td class="product-table">7mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">L-Leucine</td>
+                                <td class="product-table">2500mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">L-Isoleucine</td>
+                                <td class="product-table">1250mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Fett</td>
+                                <td class="product-table">0mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Kolhydrater</td>
+                                <td class="product-table">0mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Protein</td>
+                                <td class="product-table">10g</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>Hjälp</h2>
+                    <a href="terms.html">Köpvillkor</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>Sidor</h2>
+                    <a href="about.html">Om mig</a>
+                    <a href="mailto:dekj2100@student.miun.se">Kontakt</a>
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Credit</h2>
+                    <a href="#">Credit goes to</a>
+                    <a href="#">Font-Awesome</a>
+                    <a href="#">for all icons</a>
+                </div>
+                <div class="footer-email-form">
+                    <h2>Nyhetsbrev</h2>
+                    <form>
+                        <label class="empty" for="footer-email">x</label>
+                        <input type="email" placeholder="Din e-postadress" id="footer-email">
+                        <label class="empty" for="footer-email-btn">x</label>
+                        <input type="submit" value="OK" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="mattiasShop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function showPic() {
+
+        }
+    </script>
+</body>
+
+</html>

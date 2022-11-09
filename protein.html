@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Protein supplements from Space Nutrition, training supplements for a healthy lifestyle">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e27b26897.js" crossorigin="anonymous" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="webshop.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <title>Protein</title>
+</head>
+
+<body>
+    <header>
+        <!--navigation-->
+        <nav class="navbar">
+            <div id="logotype-box">
+                <a href="index.html"><img src="./static/logotype.svg" alt="tillbaks till start"></a>
+            </div>
+            <!--Toggle btn, hamburger-->
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a class="current" href="products.html">Produkter</a></li>
+                    <li><a href="basket.html">Varukorg<i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Main content, products and information goes here, using columns and flexbox for placement-->
+    <!--Picture tag used to optimize which img is uses for different screen sizes and best picture format displayed-->
+    <main>
+        <!--product presentation with Lightbox-->
+        <div class="flexbox-container">
+            <div class="flexbox-col wide">
+                <section>
+                    <h2 class="empty">x</h2>
+                    <a href="images/prod_tyngretilt_big.jpg" data-lightbox="spacenutrition" data-title="Tyngre protein">
+                        <picture>
+                            <source class="product-img" type="image/webp" srcset="images/prod_tyngretilt500.webp">
+                            <img class="product-img" src="images/prod_tyngretilt500.jpg" alt="Tyngre protein burk som är röd med vit etikett med smak av kladdkaka.">
+                        </picture>
+                    </a>
+                    <a href="images/tyngre2_larger500.jpg" data-lightbox="spacenutrition" data-title="Tyngre protein" class="remove-text-deco">
+                        <picture>
+                            <source class="product-img" type="image/webp" srcset="images/tyngre2_medium300.webp">
+                            <img class="product-img min" src="images/tyngre2_medium300.jpg" alt="En röd Tyngre proteinburk med smak av kladdkaka fotad med ett trägolv som bakgrund.">
+                        </picture>
+                    </a>
+                    <a href="images/tyngre_larger500.jpg" data-lightbox="spacenutrition" data-title="Tyngre protein">
+                        <picture>
+                            <source class="product-img" type="image/webp" srcset="images/tyngre_medium300.webp">
+                            <img class="product-img min" src="images/tyngre_medium300.jpg" alt="En röd Tyngre proteinburk med smak av kladdkaka fotad ståendes på en bänk.">
+                        </picture>
+                    </a>
+                </section>
+            </div>
+            <!--page title and content-->
+            <div class="flexbox-col info">
+                <section>
+                    <h1 class="presentation-title-slim">protein -<br>kladdkaka</h1><br>
+                    <p class="prod-price large">449.95kr</p><br>
+                    <p>Sveriges favoritprotein sedan 2014: <strong>Kasein Kladdkaka</strong> är nästan för bra för att vara sant! Tänk dig en delikat krämig kladdkaka som du kan ha till allt – pudding, gröt, bakning – men där protein har ersatt socker. Dina
+                        smaklökar, och dina muskler, kommer att tacka dig!</p><br>
+                    <button class="btn-black-styled" onclick="addToBasket(this, '001', 'Protein', 449.95, 'images/basket_tyngre.png', true)"><span>lägg i varukorgen</span><i class='fas fa-plus'></i></button><br>
+
+
+                    <h2 class="presentation-title">varukorg</h2>
+                    <div id="basket-holder">
+                        <ul id="basket">
+                            <li class="li-styled">Varukorgen är tom</li>
+                        </ul>
+                        <a class="btn-green-styled" href="basket.html"><span>Gå till kassan</span><i class='fas fa-angle-right'></i></a>
+                        <br>
+                        <p class="prod-cat">Artikelnr: <span class="stronger">001</span></p>
+                        <p class="prod-cat">Kategorier: Kosttillskott, Protein</p>
+                        <br><br><a class="remove-text-deco" href="products.html"><span class="back">Tillbaka</span></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="flexbox-container">
+            <div class="flexbox-col wide">
+                <section class="prod-information-section">
+                    <h3 class="presentation-title">beskrivning</h3>
+                    <p>
+                        Kasein Kladdkaka från Tyngre, vår favorit och bästsäljare! Slog ner som en bomb när den lanserades 2014. Det är svårt att hitta ett godare chokladprotein än så här – en nutida klassiker!
+                    </p><br>
+                    <p>Steg för steg kommer vi framöver att byta burkar mot påsar i så stor utsträckning som möjligt. Anledningen är naturligtvis till stor del att spara på planeten, men även att spara plats i våra kunders skåp, hyllor och lådor. Som en
+                        ytterligare bonus blir paketen mindre och smidigare att hantera.</p><br>
+                    <p>
+                        <strong>Innehåll:</strong>
+                    </p>
+                    <p>750 g, vilket motsvarar ca 22 portioner. Skopa medföljer inte.</p><br>
+                    <strong>Användning:</strong>
+                    <p>Pudding: Blanda 1 dl pulver (ca 35 g) med ca 1,5 dl kallt vatten eller mjölk. Anpassa mängden vätska efter önskad konsistens. Shake: Blanda 1 dl pulver (ca 35 g) med 3 dl kallt vatten eller mjölk.</p>
+
+                </section>
+            </div>
+            <div class="flexbox-col wide">
+                <section class="prod-information-section">
+                    <h3 class="presentation-title">näring & ingredienser</h3>
+                    <div class="product-info-table-styled-container">
+                        <table>
+                            <tr>
+                                <th class="product-table head">Ingredienser</th>
+                                <th class="product-table head">Mängd per servering</th>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Energi</td>
+                                <td class="product-table">346kcal</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Fett</td>
+                                <td class="product-table">2.1g</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Varav mättat fett</td>
+                                <td class="product-table">1.3g</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Kolhydrater</td>
+                                <td class="product-table">5.5g</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Varav sockerarter</td>
+                                <td class="product-table">5.5g</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Protein</td>
+                                <td class="product-table">73g</td>
+                            </tr>
+
+                            <tr>
+                                <td class="product-table">Salt</td>
+                                <td class="product-table">1.1g</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Kakao</td>
+                                <td class="product-table">3g</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Sötningsmedel</td>
+                                <td class="product-table">2mg</td>
+                            </tr>
+
+
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>Hjälp</h2>
+                    <a href="terms.html">Köpvillkor</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>Sidor</h2>
+                    <a href="about.html">Om mig</a>
+                    <a href="mailto:dekj2100@student.miun.se">Kontakt</a>
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Credit</h2>
+                    <a href="#">Credit goes to</a>
+                    <a href="#">Font-Awesome</a>
+                    <a href="#">for all icons</a>
+                </div>
+                <div class="footer-email-form">
+                    <h2>Nyhetsbrev</h2>
+                    <form>
+                        <label class="empty" for="footer-email">x</label>
+                        <input type="email" placeholder="Din e-postadress" id="footer-email">
+                        <label class="empty" for="footer-email-btn">x</label>
+                        <input type="submit" value="OK" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="mattiasShop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function showPic() {
+
+        }
+    </script>
+</body>
+
+</html>

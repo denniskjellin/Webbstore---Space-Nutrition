@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Disclaimer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e27b26897.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="webshop.js" defer></script>
+    <title>Om mig</title>
+</head>
+
+<body>
+    <!--page header & navigation-->
+    <header>
+        <nav class="navbar">
+            <div id="logotype-box">
+                <a href="index.html"><img src="./static/logotype.svg" alt="tillbaks till start"></a>
+            </div>
+            <!--Toggle btn, hamburger-->
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--navbar links-->
+            <div class="navbar-links">
+                <ul>
+                    <!--class current, to highlight location in navbar-->
+                    <li><a class="current" href="index.html">Hem</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="basket.html">Varukorg<i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Main content products and information goes here, using columns and flexbox for placement-->
+    <!--Picture tag used to optimize which img is uses for different screen sizes and best picture format displayed-->
+    <main>
+
+        <article class="max-ch75">
+            <h1 class="empty">x</h1>
+            <section>
+                <h1 class="presentation-title">om mig & webbsidan</h1>
+                <p> <strong>Space Nutrition</strong> är en fiktiv webbshop för ett fiktivt företag. Webbsidan är en projektwebbplats skapad av mig, Dennis Kjellin. Jag är student på Mittuniversitetet i Sundsvall och läser Webbutvecklingsprogrammet. Det närmar
+                    sig slutet av den första terminen på den två års långa utbildningen, denna webbplats är projektuppgiften för kursen Digital bildbehandling för webb. Tanken är att jag ska tillämpa de kunskaper jag tagit med mig från kursen och visa
+                    upp dom här i min projektwebbplats</p><br>
+                <p>Webbsidan är en prototyp på en webbshop med vissa underliggande funktioner för att simulera en riktigt webbshop. Funktioner som att lägga i varukorg, checka ut och tömma varukorgen finns tillgängliga. Dock så är allting fiktivt och inga
+                    riktiga beställningar går att göra. Jag har valt att min webbshop ska sälja kosttillskott då det är något som jag själv använder. </p><br>
+                <p>Jag har valt att designa webbsidan i ett ljust tema vitt och grått med en touch av svart. Miljöbilderna på produkterna tycker jag blir en perfekt färgklick genom webbsidan. Vid klick av bilderna så dyker dom antingen upp i en större ruta
+                    med hjälp av Lighthouse eller så tar dom dig vidare till en produktundersida.</p>
+            </section><br>
+
+            <section>
+                <h2>BILDBEHANDLING</h2>
+                <p>En stor del av kursen har vart att jobba med bildbehandling, redigera bilder, komprimera bilder och spara dom i gynsamma format för webben. Så i min projektwebbplats lägger jag stor vikt i att använda mig utav komprimerade bilder i optimala
+                    filformat för att skapa en snabb webbsida vid snygga bilder och grafik.</p><br>
+                <p>Har försökt att tillämpa alla de saker som jag lärt mig genom kursen, friläggning av produkter, retuschering av bilder och lyfta fram färger och kontraster med Camera Raw filret i Photoshop. Samtliga bilder är behandlade ocg optimerade,
+                    sedan lagda i picture taggen i HTML så att den mest lämpliga bilden för besökaren visas upp i personens enhet.</p>
+            </section><br>
+            <section>
+                <h2>DESIGNPLANERING</h2>
+                <p>Att i förhand planera och noga strukturera hur webbsidan ska se ut med wireframes, moodboads och designskisser är något som jag också fått lära mig i den här kursen. Så webbsidan som du är på just nu har jag framställt genom noggrann planering
+                    med wireframes, moodboard och en designprototyp. Den slutgiltiga produkten blev precis som jag planerat fast bättre om jag får säga det själv.</p>
+            </section><br>
+            <section>
+                <img class="selfie" src="/images/portratt.png" alt="porträtt på Dennis Kjellin"><br>
+                <h2>OM MIG</h2>
+                <p>Jag är en kille som är född 1993 och jag bor i Sundsvall tillsammans med min sambo. Just nu är jag delvis tjänstledig för studier annars så jobbar jag på Jack & Jones som är en klädbutik för män. Där har jag jobbat sedan studenten och
+                    tar hand om butikens kunder och har även det yttersta ansvaret att hänga om butiken, placera varor och se till att sektioner i butiken ser enhetliga och inspirerande ut, en så kallad Merchendiser.</p><br>
+
+                <p>Och det är ju just det som jag tycker är roligast också, att få hänga om och få framställa saker som just blir insprerande för kunden. Nu har jag tagit passionen för design och förmedla uttryck till en ny inriktning, just det - <strong>Webbdesign</strong></p><br>
+                <p>Jag tycker det är väldigt roligt att jobba med design, tänka igenom vad som blir grafiskt snyggt för ögat men samtidigt tänka att det vara lätt att använda och passa alla, så kallat tillgängligt. En intressant ballansgång som jag verkligen
+                    vill utvecklas mer inom!</p><br>
+
+                <p>Tack för att du tog dig tid att läsa & besöka min webbsida - Dennis Kjellin</p>
+            </section>
+
+
+        </article>
+
+
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>Hjälp</h2>
+                    <a href="terms.html">Köpvillkor</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>Sidor</h2>
+                    <a href="about.html">Om mig</a>
+                    <a href="mailto:dekj2100@student.miun.se">Kontakt</a>
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Credit</h2>
+                    <a href="#">Credit goes to</a>
+                    <a href="#">Font-Awesome</a>
+                    <a href="#">for all icons</a>
+                </div>
+                <div class="footer-email-form">
+                    <h2>Nyhetsbrev</h2>
+                    <form>
+                        <label class="empty" for="footer-email">x</label>
+                        <input type="email" placeholder="Din e-postadress" id="footer-email">
+                        <label class="empty" for="footer-email-btn">x</label>
+                        <input type="submit" value="OK" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function showPic() {
+
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shopping bag summary, Space Nutrition.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e27b26897.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="webshop.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <title>basket</title>
+</head>
+
+<body>
+    <!--page header & navigation-->
+
+    <header>
+        <nav class="navbar">
+            <div id="logotype-box">
+                <a href="index.html"><img src="./static/logotype.svg" alt="tillbaks till start"></a>
+            </div>
+            <!--Toggle btn, hamburger-->
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--navbar links-->
+            <div class="navbar-links">
+                <ul>
+                    <!--class current, to highlight location in navbar-->
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a class="current" href="basket.html">Varukorg<i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--basket table-->
+    <main>
+        <div>
+            <article>
+                <h1 class="presentation-title">varukorg</h1><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Bild</td>
+                            <td>Artikel</td>
+                            <td>Namn</td>
+                            <td>Antal</td>
+                            <td>Pris</td>
+                        </tr>
+                    </thead>
+                    <tbody id="checkout"></tbody>
+                </table><br>
+                <section class="basket-sect">
+                    <h2 class="empty">x</h2>
+                    <button class="emptyBasketBtn" onclick="emptyBasket()">Töm varukorgen <i class='far fa-trash-alt'></i></button>
+                    <a class="checkoutBtn" href="checkout.html"><span>Checkout</span><i class='fas fa-angle-right'></i></a>
+                </section>
+            </article>
+        </div>
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>Hjälp</h2>
+                    <a href="terms.html">Köpvillkor</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>Sidor</h2>
+                    <a href="about.html">Om mig</a>
+                    <a href="mailto:dekj2100@student.miun.se">Kontakt</a>
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Credit</h2>
+                    <a href="#">Credit goes to</a>
+                    <a href="#">Font-Awesome</a>
+                    <a href="#">for all icons</a>
+                </div>
+                <div class="footer-email-form">
+                    <h2>Nyhetsbrev</h2>
+                    <form>
+                        <label class="empty" for="footer-email">x</label>
+                        <input type="email" placeholder="Din e-postadress" id="footer-email">
+                        <label class="empty" for="footer-email-btn">x</label>
+                        <input type="submit" value="OK" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="mattiasShop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
+</html>

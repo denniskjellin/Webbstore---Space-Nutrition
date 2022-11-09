@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="home page for Space Nutrition, training supplements for a healthy lifestyle">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e27b26897.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="webshop.js" defer></script>
+    <title>Hem</title>
+</head>
+
+<body>
+    <!--page header & navigation-->
+    <header>
+        <nav class="navbar">
+            <div id="logotype-box">
+                <a href="index.html"><img src="./static/logotype.svg" alt="tillbaks till start"></a>
+            </div>
+            <!--Toggle btn, hamburger-->
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--navbar links-->
+            <div class="navbar-links">
+                <ul>
+                    <!--class current, to highlight location in navbar-->
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a class="current" href="basket.html">Varukorg<i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flexbox-container">
+            <div class="flexbox-col wide">
+                <form>
+                    <h1 class="presentation-title-slim">fyll i dina uppgifter</h1><br>
+                    <fieldset>
+                        <label for="name">Namn:</label>
+                        <input class="form-input" type="text" placeholder="Förnamn Efternamn" id="name">
+                        <label for="adress">Adress:</label>
+                        <input class="form-input" type="text" placeholder="Exempelvägen 1" id="adress">
+                        <label for="postNum">Postnummer:</label>
+                        <input class="form-input" type="text" placeholder="123 45" id="postNum">
+                        <label for="ort">Ort:</label>
+                        <input class="form-input" type="text" placeholder="Ort" id="ort">
+                    </fieldset><br>
+                    <div class="klarna-div-container">
+                        <section class="klarna-section">
+                            <h2 class="empty">x</h2>
+                            <input type="radio" id="klarna">
+                            <label class="klarna" for="klarna"><strong>Klarna</strong></label>
+                            <p class="klarna-p">Säkert och smidigt.</p><br>
+                            <p class="klarna-block">
+                                <i class="fa fa-shopping-basket ico-margin" style="font-size:20px"></i> Betala <strong>direkt</strong> med <strong>faktura</strong> eller <strong>delbetalning</strong>.<br><i class="fa fa-credit-card ico-margin" style="font-size:20px"></i>                                Spara kort & bankkonto
+                            </p><br>
+                            <input type="radio" id="kort">
+                            <label class="klarna" for="kort"><strong>Betala med kort</strong></label>
+                            <p class="klarna-p">Fyll i kortuppgifter</p>
+                        </section>
+                    </div>
+                    <div class="margin-checkbox">
+                        <input class="form-input" type="checkbox" id="confirmForm">
+                        <label class="label-inline" for="confirmForm">Jag accepterar köpvilkoren.</label>
+                    </div><br>
+                    <button class="checkoutBtn display inline block" type="submit" onclick="checkoutBasket()">Slutför köp</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>Hjälp</h2>
+                    <a href="terms.html">Köpvillkor</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>Sidor</h2>
+                    <a href="about.html">Om mig</a>
+                    <a href="mailto:dekj2100@student.miun.se">Kontakt</a>
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Credit</h2>
+                    <a href="#">Credit goes to</a>
+                    <a href="#">Font-Awesome</a>
+                    <a href="#">for all icons</a>
+                </div>
+                <div class="footer-email-form">
+                    <h2>Nyhetsbrev</h2>
+                    <form>
+                        <label class="empty" for="footer-email">x</label>
+                        <input type="email" placeholder="Din e-postadress" id="footer-email">
+                        <label class="empty" for="footer-email-btn">x</label>
+                        <input type="submit" value="OK" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="mattiasShop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
+</html>

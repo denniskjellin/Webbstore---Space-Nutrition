@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pree-workout supplements from Space Nutrition, training supplements for a healthy lifestyle">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e27b26897.js" crossorigin="anonymous"></script>
+    <script src="webshop.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <title>Burn - Sour Pops</title>
+</head>
+
+<body>
+    <header>
+        <!--navigation-->
+        <nav class="navbar">
+            <div id="logotype-box">
+                <a href="index.html"><img src="./static/logotype.svg" alt="tillbaks till start"></a>
+            </div>
+            <!--Toggle btn, hamburger-->
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a class="current" href="products.html">Produkter</a></li>
+                    <li><a href="basket.html">Varukorg<i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Main content, products and information goes here, using columns and flexbox for placement-->
+    <!--Picture tag used to optimize which img is uses for different screen sizes and best picture format displayed-->
+    <main>
+
+        <!--product img, presented with lightbox-->
+        <div class="flexbox-container">
+            <div class="flexbox-col wide">
+                <section>
+                    <h2 class="empty">x</h2>
+                    <a class="remove-text-deco" href="images/prod_burntilt_big.jpg" data-lightbox="spacenutrition" data-title="Burn pree-workout, sour pops.">
+                        <picture>
+                            <source class="product-img" type="image/webp" srcset="images/prod_burntilt500.webp">
+                            <img class="product-img" src="images/prod_burntilt500.jpg" alt="Pree-workout med smak av sour pops, en svart burk, etiketten är det blå godisar på.">
+                        </picture>
+                    </a>
+                    <a class="remove-text-deco" href="images/enviroment_burn_500.jpg" data-lightbox="spacenutrition" data-title="Burn pree-workout, sour pops.">
+                        <picture>
+                            <source class="product-img" type="image/webp" srcset="images/enviroment_burn_300.webp">
+                            <img class="product-img min" src="images/enviroment_300.jpg" alt="Pree-workout med smak av sour pops, en svart burk som döljs bakom en grön växt.">
+                        </picture>
+                    </a>
+                    <a href="images/prod_burn500.jpg" data-lightbox="spacenutrition" data-title="Burn pree-workout, sour pops." class="remove-text-deco">
+                        <picture>
+                            <source class="product-img" type="image/webp" srcset="images/prod_burn300.webp">
+                            <img class="product-img min" src="images/prod_burn300.jpg" alt="Pree-workout med smak av sour pops, en svart burrk med sour pop godisar på.">
+                        </picture>
+                    </a>
+                </section>
+            </div>
+
+            <!--head title of the page and product information-->
+            <div class="flexbox-col info">
+                <section>
+                    <h1 class="presentation-title-slim">pree-workout -<br> sour pops</h1><br>
+                    <p class="prod-price large">299.95kr</p><br>
+                    <p><strong>Candy Series BURN</strong> är en helt ny fettförbrännare med en spännande sammansättning aktiva ämnen som håller vad de lovar. Det har aldrig smakat godare att bränna fett!</p><br>
+                    <p><strong>Candy Series BURN kan ha följande effekt på dig:</strong></p>
+
+                    <ul>
+                        <li class="product-info-list-item">Thermogen effekt</li>
+                        <li class="product-info-list-item">Uppiggande</li>
+                        <li class="product-info-list-item">Hög koffeinhalt</li>
+                        <li class="product-info-list-item">Ökad ämnesomsättning</li>
+                        <li class="product-info-list-item">Minskad hungerkänsla</li>
+                    </ul>
+
+                    <br>
+                    <!--btn for adding to basket with Javascript settings-->
+                    <button class="btn-black-styled" onclick="addToBasket(this, '003', 'Pree', 299.95, 'images/basket_burn.png', true)"><span>lägg i varukorgen</span><i class='fas fa-plus'></i></button><br>
+
+
+                    <h2 class="presentation-title">varukorg</h2>
+                    <div id="basket-holder">
+                        <ul id="basket">
+                            <li class="li-styled">Varukorgen är tom</li>
+                        </ul>
+                        <!--a tag, styled as button to go to basket-->
+                        <a class="btn-green-styled" href="basket.html"><span>Gå till kassan</span><i class='fas fa-angle-right'></i></a>
+                        <br>
+                        <p class="prod-cat">Artikelnr: <span class="stronger">003</span></p>
+                        <p class="prod-cat">Kategorier: Kosttillskott, Pree-workout</p>
+                        <br><br><a class="remove-text-deco" href="products.html"><span class="back">Tillbaka</span></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="flexbox-container">
+            <div class="flexbox-col wide">
+                <section class="prod-information-section">
+                    <h3 class="presentation-title">beskrivning</h3>
+                    <p>
+                        GAAM BURN ger dig de bästa förutsättningarna för att du ska minska ditt underhudsfett på ett så snabbt och smidigt sätt som möjligt, och i sann Candy Series anda så är också smaken i fokus!
+                    </p><br>
+                    <p><strong>Doseringsförslag:</strong></p>
+                    <p>Blanda en halv skopa med 2,5 dl vatten i en shaker och intag 15 min före frukost. För maximal effekt, tag ytterligare en portion på eftermiddagen.</p><br>
+                    <p><strong>Storlek:</strong></p>
+                    <p>240 g pulver i varje burk.</p>
+                </section>
+            </div>
+            <div class="flexbox-col wide">
+                <section class="prod-information-section">
+                    <h3 class="presentation-title">näring & ingredienser</h3>
+                    <div class="product-info-table-styled-container">
+                        <table>
+                            <tr>
+                                <th class="product-table head">Ingredienser</th>
+                                <th class="product-table head">Mängd per servering</th>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Inulin</td>
+                                <td class="product-table">1000mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Koffein</td>
+                                <td class="product-table">200mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Hallonextrakt</td>
+                                <td class="product-table">100mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Mangoextrakt</td>
+                                <td class="product-table">100mg</td>
+                            </tr>
+                            <tr>
+                                <td class="product-table">Ginseng</td>
+                                <td class="product-table">50mg</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>Hjälp</h2>
+                    <a href="terms.html">Köpvillkor</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>Sidor</h2>
+                    <a href="about.html">Om mig</a>
+                    <a href="mailto:dekj2100@student.miun.se">Kontakt</a>
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Credit</h2>
+                    <a href="#">Credit goes to</a>
+                    <a href="#">Font-Awesome</a>
+                    <a href="#">for all icons</a>
+                </div>
+                <div class="footer-email-form">
+                    <h2>Nyhetsbrev</h2>
+                    <form>
+                        <label class="empty" for="footer-email">x</label>
+                        <input type="email" placeholder="Din e-postadress" id="footer-email">
+                        <label class="empty" for="footer-email-btn">x</label>
+                        <input type="submit" value="OK" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="mattiasShop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function showPic() {
+
+        }
+    </script>
+</body>
+
+</html>
